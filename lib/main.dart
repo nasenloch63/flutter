@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Meine erste Flutter App'),
     );
   }
 }
@@ -64,6 +64,11 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter++;
+    });
+  }
+  void _decrementCounter() {
+    setState(() {
+      _counter--;
     });
   }
 
@@ -104,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            const Text('You have pushed the button this many times:'),
+            const Text('Hallo Welt!'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
